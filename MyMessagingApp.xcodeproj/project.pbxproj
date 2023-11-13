@@ -14,6 +14,7 @@
 		810781002AFFD3D800151BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 810780FF2AFFD3D800151BDB /* Assets.xcassets */; };
 		810781032AFFD3D800151BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 810781012AFFD3D800151BDB /* LaunchScreen.storyboard */; };
 		81B11EDA2B01DA94002B9212 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81B11ED92B01DA94002B9212 /* GoogleService-Info.plist */; };
+		81B11EDC2B01DEC5002B9212 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B11EDB2B01DEC5002B9212 /* LoginViewController.swift */; };
 		A803704DD5564855273FCBEF /* Pods_MyMessagingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152B916B6FF9D151C6A86888 /* Pods_MyMessagingApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		810781022AFFD3D800151BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		810781042AFFD3D800151BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81B11ED92B01DA94002B9212 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		81B11EDB2B01DEC5002B9212 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EEFD68E6F37D5ED40D9AB4C9 /* Pods-MyMessagingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMessagingApp.release.xcconfig"; path = "Target Support Files/Pods-MyMessagingApp/Pods-MyMessagingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 				810781012AFFD3D800151BDB /* LaunchScreen.storyboard */,
 				810781042AFFD3D800151BDB /* Info.plist */,
 				81B11ED92B01DA94002B9212 /* GoogleService-Info.plist */,
+				81B11EDB2B01DEC5002B9212 /* LoginViewController.swift */,
 			);
 			path = MyMessagingApp;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B11EDC2B01DEC5002B9212 /* LoginViewController.swift in Sources */,
 				810780FB2AFFD3D700151BDB /* ViewController.swift in Sources */,
 				810780F72AFFD3D700151BDB /* AppDelegate.swift in Sources */,
 				810780F92AFFD3D700151BDB /* SceneDelegate.swift in Sources */,
