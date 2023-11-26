@@ -30,10 +30,14 @@ class LoginViewController: UIViewController {
     //views
     @IBOutlet weak var repeatPasswordLineView: UIView!
     
+    // MARK: - Vars
+    var isLogin = true
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateUIFor(login: true)
         setupTextFieldDelegate()
     }
     
@@ -50,8 +54,9 @@ class LoginViewController: UIViewController {
         
     }
     
-    @IBAction func signUpButtonPressed(_ sender: Any) {
-        
+    @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        updateUIFor(login: sender.titleLabel?.text == "Login")
+        isLogin.toggle()
     }
     
     // MARK: - Setup
@@ -67,6 +72,20 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: - Animations
+    
+    private func updateUIFor(login: Bool) {
+        loginButtonOutlet.setImage(UIImage(named: login ? "loginBtn" : "registerBtn"), for: .normal)
+        signUpButtonOutlet.setTitle(login ? "SignUp" : "Login", for: .normal)
+        
+        signUpLabel.text = login ? "Don't have an account" : "Have an account"
+        
+        UIView.animate(withDuration: 0.5) {
+            self.repeatPasswordTextField.isHidden = login
+            self.repeatPasswordLabel.isHidden = login
+            self.repeatPasswordLineView.isHidden = login
+        }
+    }
+    
     private func updatePlaceholderLabels(textField: UITextField) {
     
         switch textField {
