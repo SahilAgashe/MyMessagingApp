@@ -95,19 +95,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00387AFF42E2A7AFB53FA436 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		810780EA2AFFD3D700151BDB = {
 			isa = PBXGroup;
 			children = (
 				810780F52AFFD3D700151BDB /* MyMessagingApp */,
 				810780F42AFFD3D700151BDB /* Products */,
-				00387AFF42E2A7AFB53FA436 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
