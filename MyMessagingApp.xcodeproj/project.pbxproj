@@ -13,6 +13,7 @@
 		810780FE2AFFD3D700151BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 810780FC2AFFD3D700151BDB /* Main.storyboard */; };
 		810781002AFFD3D800151BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 810780FF2AFFD3D800151BDB /* Assets.xcassets */; };
 		810781032AFFD3D800151BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 810781012AFFD3D800151BDB /* LaunchScreen.storyboard */; };
+		81149F152B142B480061A947 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 81149F142B142B480061A947 /* ProgressHUD */; };
 		819C52802B12E64D00DF8429 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 819C527F2B12E64D00DF8429 /* FirebaseAnalytics */; };
 		819C52822B12E64D00DF8429 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 819C52812B12E64D00DF8429 /* FirebaseAnalyticsOnDeviceConversion */; };
 		819C52842B12E64D00DF8429 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 819C52832B12E64D00DF8429 /* FirebaseAnalyticsSwift */; };
@@ -63,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				819C52922B12E64D00DF8429 /* FirebaseDatabase in Frameworks */,
+				81149F152B142B480061A947 /* ProgressHUD in Frameworks */,
 				819C52A02B12E64D00DF8429 /* FirebaseFunctionsCombine-Community in Frameworks */,
 				819C52982B12E64D00DF8429 /* FirebaseFirestore in Frameworks */,
 				819C52842B12E64D00DF8429 /* FirebaseAnalyticsSwift in Frameworks */,
@@ -171,6 +173,7 @@
 				819C52AF2B12E64D00DF8429 /* FirebaseRemoteConfigSwift */,
 				819C52B12B12E64D00DF8429 /* FirebaseStorage */,
 				819C52B32B12E64D00DF8429 /* FirebaseStorageCombine-Community */,
+				81149F142B142B480061A947 /* ProgressHUD */,
 			);
 			productName = MyMessagingApp;
 			productReference = 810780F32AFFD3D700151BDB /* MyMessagingApp.app */;
@@ -202,6 +205,7 @@
 			mainGroup = 810780EA2AFFD3D700151BDB;
 			packageReferences = (
 				819C527E2B12E64D00DF8429 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				81149F132B142B480061A947 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = 810780F42AFFD3D700151BDB /* Products */;
 			projectDirPath = "";
@@ -454,6 +458,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		81149F132B142B480061A947 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
 		819C527E2B12E64D00DF8429 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -465,6 +477,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		81149F142B142B480061A947 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81149F132B142B480061A947 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
 		819C527F2B12E64D00DF8429 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 819C527E2B12E64D00DF8429 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
