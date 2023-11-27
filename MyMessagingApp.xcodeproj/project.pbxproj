@@ -16,6 +16,8 @@
 		81149F152B142B480061A947 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 81149F142B142B480061A947 /* ProgressHUD */; };
 		81149F172B1433AF0061A947 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81149F162B1433AF0061A947 /* User.swift */; };
 		81149F192B1436E00061A947 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81149F182B1436E00061A947 /* Constants.swift */; };
+		81149F1B2B1445D90061A947 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81149F1A2B1445D90061A947 /* FCollectionReference.swift */; };
+		81149F1F2B1447280061A947 /* FirebaseUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81149F1E2B1447280061A947 /* FirebaseUserListener.swift */; };
 		819C52802B12E64D00DF8429 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 819C527F2B12E64D00DF8429 /* FirebaseAnalytics */; };
 		819C52822B12E64D00DF8429 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 819C52812B12E64D00DF8429 /* FirebaseAnalyticsOnDeviceConversion */; };
 		819C52842B12E64D00DF8429 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 819C52832B12E64D00DF8429 /* FirebaseAnalyticsSwift */; };
@@ -58,6 +60,8 @@
 		810781042AFFD3D800151BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81149F162B1433AF0061A947 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		81149F182B1436E00061A947 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		81149F1A2B1445D90061A947 /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
+		81149F1E2B1447280061A947 /* FirebaseUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListener.swift; sourceTree = "<group>"; };
 		81B11ED92B01DA94002B9212 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81B11EDB2B01DEC5002B9212 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,11 +132,29 @@
 				810781012AFFD3D800151BDB /* LaunchScreen.storyboard */,
 				810781042AFFD3D800151BDB /* Info.plist */,
 				81B11ED92B01DA94002B9212 /* GoogleService-Info.plist */,
-				81B11EDB2B01DEC5002B9212 /* LoginViewController.swift */,
 				81149F182B1436E00061A947 /* Constants.swift */,
-				81149F162B1433AF0061A947 /* User.swift */,
+				81B11EDB2B01DEC5002B9212 /* LoginViewController.swift */,
+				81149F1D2B1446B00061A947 /* FirebaseHelpers */,
+				81149F1C2B1446910061A947 /* Model */,
 			);
 			path = MyMessagingApp;
+			sourceTree = "<group>";
+		};
+		81149F1C2B1446910061A947 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81149F162B1433AF0061A947 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81149F1D2B1446B00061A947 /* FirebaseHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				81149F1A2B1445D90061A947 /* FCollectionReference.swift */,
+				81149F1E2B1447280061A947 /* FirebaseUserListener.swift */,
+			);
+			path = FirebaseHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,8 +266,10 @@
 				81B11EDC2B01DEC5002B9212 /* LoginViewController.swift in Sources */,
 				810780FB2AFFD3D700151BDB /* ViewController.swift in Sources */,
 				810780F72AFFD3D700151BDB /* AppDelegate.swift in Sources */,
+				81149F1F2B1447280061A947 /* FirebaseUserListener.swift in Sources */,
 				81149F172B1433AF0061A947 /* User.swift in Sources */,
 				810780F92AFFD3D700151BDB /* SceneDelegate.swift in Sources */,
+				81149F1B2B1445D90061A947 /* FCollectionReference.swift in Sources */,
 				81149F192B1436E00061A947 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

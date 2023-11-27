@@ -43,3 +43,15 @@ struct User:Codable, Equatable {
     }
     
 }
+
+
+func saveUserLocally(_ user: User) {
+    let encoder = JSONEncoder()
+    
+    do {
+        let data = try encoder.encode(user)
+        UserDefaults.standard.set(data, forKey: kCURRENTUSER)
+    } catch {
+        print("DEBUG: Error while saving user locally is \(error.localizedDescription)")
+    }
+}
